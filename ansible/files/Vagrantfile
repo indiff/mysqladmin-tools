@@ -42,7 +42,7 @@ Vagrant.configure("2") do |config|
 				# 设置阿里云源
 				curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 				# 更新 yum
-				yum -y update
+				# yum -y update
 			SHELL
         end
     end

@@ -1,12 +1,13 @@
+@echo off 
 rem https://download.virtualbox.org/virtualbox/5.1.38/VirtualBox-5.1.38-122592-Win.exe
-rem IDM çš„å‘½ä»¤è¡Œè°ƒç”¨æ–¹å¼ï¼šIDMan.exe /d "download_url" /f "filename" /p "output_path" â€‹â€‹â€‹â€‹
-rem /p - æœ¬åœ°è·¯å¾„ï¼Œå®šä¹‰è¦ä¿å­˜çš„æ–‡ä»¶æ”¾åœ¨å“ªä¸ªæœ¬åœ°è·¯å¾„
-rem /f - æœ¬åœ°æ–‡ä»¶åï¼Œå®šä¹‰è¦ä¿å­˜çš„æ–‡ä»¶æ”¹ååä¿å­˜åœ¨æœ¬åœ°
-rem /q - IDM å°†åœ¨æˆåŠŸä¸‹è½½ä¹‹åè‡ªåŠ¨é€€å‡º
-rem /h - IDM å°†åœ¨æˆåŠŸä¸‹è½½ä¹‹åæŒ‚èµ·è¿æ¥
-rem /a - æ·»åŠ ä¸€ä¸ªæŒ‡å®šçš„æ–‡ä»¶ï¼Œç”¨ /d åˆ°ä¸‹è½½é˜Ÿåˆ—ï¼Œä½†æ˜¯ä¸å¼€å§‹ä¸‹è½½
-rem /s - å¼€å§‹ä»»åŠ¡è°ƒåº¦é‡Œçš„é˜Ÿåˆ—
-rem /n - é™é»˜ä¸‹è½½ï¼Œæ‰§è¡Œå‘½ä»¤æœŸé—´ä¸å¼¹çª—
+rem IDM µÄÃüÁîĞĞµ÷ÓÃ·½Ê½£ºIDMan.exe /d "download_url" /f "filename" /p "output_path" ????
+rem /p - ±¾µØÂ·¾¶£¬¶¨ÒåÒª±£´æµÄÎÄ¼ş·ÅÔÚÄÄ¸ö±¾µØÂ·¾¶
+rem /f - ±¾µØÎÄ¼şÃû£¬¶¨ÒåÒª±£´æµÄÎÄ¼ş¸ÄÃûºó±£´æÔÚ±¾µØ
+rem /q - IDM ½«ÔÚ³É¹¦ÏÂÔØÖ®ºó×Ô¶¯ÍË³ö
+rem /h - IDM ½«ÔÚ³É¹¦ÏÂÔØÖ®ºó¹ÒÆğÁ¬½Ó
+rem /a - Ìí¼ÓÒ»¸öÖ¸¶¨µÄÎÄ¼ş£¬ÓÃ /d µ½ÏÂÔØ¶ÓÁĞ£¬µ«ÊÇ²»¿ªÊ¼ÏÂÔØ
+rem /s - ¿ªÊ¼ÈÎÎñµ÷¶ÈÀïµÄ¶ÓÁĞ
+rem /n - ¾²Ä¬ÏÂÔØ£¬Ö´ĞĞÃüÁîÆÚ¼ä²»µ¯´°
 set DE="D:\Program Files (x86)\Internet Download Manager\IDMan.exe"
 set CMD=%DE%  /p "%CD%" /n /d 
 rem %CMD% https://www.percona.com/downloads/Percona-XtraDB-Cluster-LATEST/Percona-XtraDB-Cluster-5.7.22-29.26/binary/tarball/Percona-XtraDB-Cluster-5.7.22-rel22-29.26.1.Linux.x86_64.ssl101.tar.gz
@@ -14,7 +15,9 @@ rem %CMD% https://www.percona.com/downloads/Percona-XtraDB-Cluster-LATEST/Percon
 %CMD% https://github-production-release-asset-2e65be.s3.amazonaws.com/27358084/49d2ce80-b5f4-11e8-8be4-acb2db0abbf8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20181106%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20181106T055043Z&X-Amz-Expires=300&X-Amz-Signature=9731929fa342744c4476aaa0c7b4e6768473ab697552db4166fe8c377b6d7430&X-Amz-SignedHeaders=host&actor_id=12639472&response-content-disposition=attachment%3B%20filename%3Dproxysql-rc1_2.0.0-1-centos7.x86_64.rpm&response-content-type=application%2Foctet-stream
 %CMD% https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.13-linux-glibc2.12-x86_64.tar.xz
 rem %CMD% https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz
-%CMD% http://mirrors.sohu.com/mysql/MySQL-5.7/mysql-5.7.23-linux-glibc2.12-x86_64.tar.gz
+rem %CMD% http://mirrors.sohu.com/mysql/MySQL-5.7/mysql-5.7.23-linux-glibc2.12-x86_64.tar.gz
+%CMD% http://mirrors.sohu.com/mysql/MySQL-5.7/mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz
 %CMD% http://www.keepalived.org/software/keepalived-1.4.3.tar.gz
 %CMD% https://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-5.7.23-23/binary/tarball/Percona-Server-5.7.23-23-Linux.x86_64.ssl101.tar.gz
 %CMD% https://mirrors.shu.edu.cn/mariadb//mariadb-10.3.12/bintar-linux-x86_64/mariadb-10.3.12-linux-x86_64.tar.gz
+pause
