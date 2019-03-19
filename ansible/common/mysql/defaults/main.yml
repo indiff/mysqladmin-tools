@@ -2,12 +2,12 @@
 #### MySQL 全局默认配置文件 ####
 
 # MySQL 二进制包目录
-software_files_path: "/downloads"
+software_files_path: "/vagrant"
 # MySQL 安装目录
 software_install_path: "/usr/local"
 
-mysql_version: "5.7.20"
-mysql_package: "mysql-5.7.20-linux-glibc2.12-x86_64.tar.gz"
+mysql_version: "5.7.23"
+mysql_package: "mysql-5.7.23-linux-glibc2.12-x86_64.tar.gz"
 
 # MySQL 分支,默认官司版本,可选:[mysql, pxc, percona, mariadb]
 mysql_branch: "mysql"
@@ -20,7 +20,7 @@ mysql_cnf_tpl: "my.cnf"
 mysql_port: "3306"
 mysql_user: "mysql"
 # root 密码
-mysql_password: "abcd@1234"
+mysql_password: "Admin001"
 # MySQL全局 Data home
 mysql_datahome: "/data/mysql"
 # MySQL实例 Data home,使用端口号
@@ -29,7 +29,7 @@ mysql_datadir: "{{ mysql_portdir }}/data"
 mysql_sock: "/tmp/mysql{{ mysql_port }}.sock"
 
 # 是否开机启动
-startup_on_boot: False
+startup_on_boot: True
 
 # 多实例service name,用于 systemctl start mysql_servicename
 mysql_servicename : "mysql{{ mysql_port }}"
