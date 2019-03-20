@@ -2,6 +2,11 @@
 - name: Setup MHA node
   hosts: mha-node
   remote_user: root
+  # remote_user: vagrant
+  # become: yes
+  # become_method: sudo
+  # become_user: root
+
   vars_files:
     - ../../common/mysql/defaults/main.yml
     - var/main.yml

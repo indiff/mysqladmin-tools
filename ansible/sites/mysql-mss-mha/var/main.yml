@@ -1,5 +1,5 @@
 mysql_repl_user: repl
-mysql_repl_password: repl@1234
+mysql_repl_password: Admin001
 gtid: False
 mysql_port: 3306
 mysql_password: Admin001
