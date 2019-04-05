@@ -20,4 +20,5 @@ rem %CMD% http://mirrors.sohu.com/mysql/MySQL-5.7/mysql-5.7.23-linux-glibc2.12-x
 %CMD% http://www.keepalived.org/software/keepalived-1.4.3.tar.gz
 %CMD% https://www.percona.com/downloads/Percona-Server-5.7/Percona-Server-5.7.23-23/binary/tarball/Percona-Server-5.7.23-23-Linux.x86_64.ssl101.tar.gz
 %CMD% https://mirrors.shu.edu.cn/mariadb//mariadb-10.3.12/bintar-linux-x86_64/mariadb-10.3.12-linux-x86_64.tar.gz
+%CMD% https://github.com/yoshinorim/mha4mysql-node/releases/download/v0.58/mha4mysql-node-0.58-0.el7.centos.noarch.rpm
 pause
