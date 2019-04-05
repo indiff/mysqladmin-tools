@@ -7,3 +7,4 @@ __pycache__/
 *.py[cod]
 *$py.class
 /ansible/files/*.gz
+/ansible/sites/mysql-mss-mha/roles
