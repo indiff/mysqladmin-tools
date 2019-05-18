@@ -13,5 +13,3 @@
  - Redis + Consul
 
 [查看文档](../../tree/master/ansible)
-
-交流QQ群:141534961
