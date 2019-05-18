@@ -131,5 +131,3 @@ ansible-playbook -i hosts site.yml
  - [zabbix + MySQL集群监控](../../../tree/master/ansible/sites/zabbix)
  - [proxysql + MySQL集群代理](../../../tree/master/ansible/sites/proxysql)
  - 更多定制等你来实现.
-
- 交流QQ群:141534961
